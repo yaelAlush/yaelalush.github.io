@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+
+    body {
+        height: 100%;
+        background-color: #333;
+        margin: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            background-color: rgb(147 159 159);
+
+            .text-container {
+                padding-left: 5%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                font-family: 'Source Sans Pro', sans-serif;
+
+                .name {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 3em;
+                    padding-bottom: 1%;
+                }
+
+                .affiliation {
+                    font-size: 1.2em;
+                    color: #ffffffc9;
+                }
+            }
+
+        }
+
+        .page {
+            background-color: white;
+            height: 100%;
+
+            @media only screen and (min-width: 600px) {
+
+                .page-container {
+                    padding-top: 2%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+
+                    .content {
+                        display: flex;
+                        padding-right: 1%;
+
+                        .text-content {
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 1.4em;
+
+                            .text-par {
+                                padding-bottom: 2%;
+
+                                a {
+                                    color: black;
+                                    text-decoration: underline;
+                                }
+
+                                a:hover {
+                                    text-decoration: none;
+                                    color: #716c6c;
+                                }
+                            }
+
+                            .contact-information {
+                                padding-top: 2%;
+
+                                .title {
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    text-transform: uppercase;
+                                    font-size: 1.3em;
+                                    font-weight: 300;
+                                }
+
+                                .contact-container {
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    font-size: 1em;
+
+                                    .contact-info {
+                                        padding-top: 1%;
+
+                                        a {
+                                            color: black;
+                                            text-decoration: underline;
+                                        }
+                                        
+                                        a:hover {
+                                            text-decoration: none;
+                                            color: #716c6c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .profile-photo {
+                            /* float: left; */
+                            /* padding-right: 2%; */
+                            width: 40%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+
+                .page-container {
+                    padding-top: 2%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    .content {
+                        /* display: flex; */
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 1%;
+
+                        .text-content {
+                            padding-top: 5%;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 1.4em;
+                            order:2;
+                            .text-par {
+                                padding-bottom: 2%;
+
+                                a {
+                                    color: black;
+                                    text-decoration: underline;
+                                }
+
+                                a:hover {
+                                    text-decoration: none;
+                                    color: #716c6c;
+                                }
+                            }
+
+                            .contact-information {
+                                padding-top: 5%;
+
+                                .title {
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    text-transform: uppercase;
+                                    font-size: 1.3em;
+                                    font-weight: 300;
+                                }
+
+                                .contact-container {
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    font-size: 1em;
+
+                                    .contact-info {
+                                        padding-top: 2%;
+
+                                        a {
+                                            color: black;
+                                            text-decoration: underline;
+                                        }
+                                        
+                                        a:hover {
+                                            text-decoration: none;
+                                            color: #716c6c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .profile-photo {
+                            width: 80%;
+                            align-self: center;
+                            height: 100%;
+                            order:1;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
