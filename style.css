@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+      height: 100%;
 
     body {
         height: 100%;
@@ -7,8 +7,8 @@ html {
         margin: 0;
         padding-left: 2%;
         padding-right: 2%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+         grid-template-rows: auto 1fr;
 
         .header {
             background-color: rgb(147 159 159);
@@ -69,7 +69,7 @@ html {
 
                             .contact-information {
                                 padding-top: 2%;
-
+                                padding-bottom: 2%;
                                 .title {
                                     font-family: 'Source Sans Pro', sans-serif;
                                     text-transform: uppercase;
@@ -99,8 +99,6 @@ html {
                         }
 
                         .profile-photo {
-                            /* float: left; */
-                            /* padding-right: 2%; */
                             width: 40%;
                             height: 100%;
                         }
@@ -115,7 +113,6 @@ html {
                     padding-left: 5%;
                     padding-right: 5%;
                     .content {
-                        /* display: flex; */
                         display: flex;
                         flex-direction: column;
                         padding-right: 1%;
@@ -141,6 +138,7 @@ html {
 
                             .contact-information {
                                 padding-top: 5%;
+                                padding-bottom: 5%;
 
                                 .title {
                                     font-family: 'Source Sans Pro', sans-serif;
